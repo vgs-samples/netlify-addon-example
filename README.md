@@ -4,8 +4,14 @@
 
 First to all you need to create your site and deploy to netlify.
 
-1. Install netlify-cli. Netlify docs [https://www.netlify.com/docs/cli/](https://www.netlify.com/docs/cli/)
-2. Deploy your site with form. Here is example code for it
+1. Click Deploy to netlify button
+2. Install netlify-cli. Netlify docs [https://www.netlify.com/docs/cli/](https://www.netlify.com/docs/cli/)
+3. Install VGS authentication plugin for netlify cli by running `netlify plugins:install @vgs/netlify-cli-plugin`
+4. Run `netlify vgs-auth` from your site's directory.
+5. Then, follow interactive guide after authentication flow.
+
+
+Example of form
 ```html
 <form name="contact" method="post" netlify-honeypot="b" autocomplete="off" netlify secure>
   <p>
@@ -27,6 +33,3 @@ First to all you need to create your site and deploy to netlify.
 - `data-secure-field` input attribute tells which field should be secured
 
 
-3. Install VGS authentication plugin for netlify cli by running `netlify plugins:install @vgs/netlify-cli-plugin`
-4. Run `netlify vgs-auth` from your site's directory.
-5. Then, follow interactive guide after authentication flow.
