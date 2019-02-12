@@ -1,1 +1,76 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vgs-Netlify integration</title>
+
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px; 
+      font-size: 18px;
+    }
+
+    input[type="text"] {
+      height: 27px;
+      padding: 1px;
+    }
+
+    button {
+      width: 100px;
+      height: 30px;
+      font-size: 18px;
+      border-radius: 2px;
+    }
+
+    [data-secure-field] iframe {
+      border: 0 none transparent;
+      height: inherit;
+      vertical-align: middle;
+      width: inherit;
+    }
+
+    span[data-secure-field] {
+      background-color: #fff;
+      border: 1px solid #dfdfdf;
+      display: inline-block;
+      height: 27px;
+      padding: 1px;
+      position: relative;
+      width: 128px;
+    }
+
+    form span {
+      display: inline-block;
+      height: 20px;
+      width: 200px;
+      margin-bottom: 15px;
+    }
+    span iframe {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 300px;margin: 0 auto;">
+    <form name="contact" method="post" netlify-honeypot="b" autocomplete="off" netlify secure>
+        <p>
+          <label for="name">Basic Field</label>
+          <input type="text" name="name" id="name" placeholder="Name" data-secure-field />
+        </p>
+    
+        <p>
+          <label for="ssn">Secure Field</label>
+          <input type="text" name="field2341555" placeholder="Field" data-secure-field />
+        </p>
+      
+        <p>
+          <button type="submit" id="submit">Send</button>
+        </p>
+      </form>
+  </div>
+</body>
+</html>
