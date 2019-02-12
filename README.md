@@ -1,5 +1,7 @@
 ### Example of using VGS as a netlify addon
 
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/dmarynych/netlify-one-click"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
+
 First to all you need to create your site and deploy to netlify.
 
 1. Install netlify-cli. Netlify docs [https://www.netlify.com/docs/cli/](https://www.netlify.com/docs/cli/)
