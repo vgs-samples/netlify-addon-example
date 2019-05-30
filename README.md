@@ -1,16 +1,13 @@
 ### Example of using VGS as a netlify addon
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/verygoodsecurity/netlify-one-click"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
-
 First to all you need to create your site and deploy to netlify.
 
-1. Click Deploy to netlify button
-2. Clone forked repo locally
-3. Install netlify-cli. Netlify docs [https://www.netlify.com/docs/cli/](https://www.netlify.com/docs/cli/)
-4. Run `netlify link` from site's directory
-5. Run `netlify addons:create vgs` from your site's directory.
-6. Run `netlify addons:auth vgs`, to authenticate and give addon access to your VGS account.
-7. Then, follow interactive guide.
+1. Clone repo
+2. Install netlify-cli. Netlify docs [https://www.netlify.com/docs/cli/](https://www.netlify.com/docs/cli/)
+3. Run `netlify init` from site's directory
+4. Run `netlify addons:create vgs` from site's directory.
+5. Run `netlify addons:auth vgs`, to authenticate and give addon access to your VGS account.
+6. Then, follow interactive guide.
 
 
 Example of form
