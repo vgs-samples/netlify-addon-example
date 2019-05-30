@@ -5,10 +5,12 @@
 First to all you need to create your site and deploy to netlify.
 
 1. Click Deploy to netlify button
-2. Install netlify-cli. Netlify docs [https://www.netlify.com/docs/cli/](https://www.netlify.com/docs/cli/)
-3. Run `netlify addons:create vgs` from your site's directory.
-4. Run `netlify addons:auth vgs`, to authenticate and give addon access to your VGS account.
-5. Then, follow interactive guide.
+2. Clone forked repo locally
+3. Install netlify-cli. Netlify docs [https://www.netlify.com/docs/cli/](https://www.netlify.com/docs/cli/)
+4. Run `netlify link` from site's directory
+5. Run `netlify addons:create vgs` from your site's directory.
+6. Run `netlify addons:auth vgs`, to authenticate and give addon access to your VGS account.
+7. Then, follow interactive guide.
 
 
 Example of form
