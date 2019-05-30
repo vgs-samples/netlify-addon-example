@@ -5,24 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Vgs-Netlify integration</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 
   <style>
     body {
-      text-align: center;
       margin-top: 100px; 
       font-size: 18px;
     }
 
-    input[type="text"] {
-      height: 27px;
-      padding: 1px;
-    }
-
-    button {
-      width: 100px;
-      height: 30px;
-      font-size: 18px;
-      border-radius: 2px;
+    .form-control {
+      font-size: 14px;
     }
 
     [data-secure-field] iframe {
@@ -30,9 +22,12 @@
       height: inherit;
       vertical-align: middle;
       width: inherit;
+      position: relative;
+      left: 1px;
+      top: -8px;
     }
 
-    span[data-secure-field] {
+    /* span[data-secure-field] {
       background-color: #fff;
       border: 1px solid #dfdfdf;
       display: inline-block;
@@ -40,7 +35,7 @@
       padding: 1px;
       position: relative;
       width: 128px;
-    }
+    } */
 
     form span {
       display: inline-block;
@@ -52,25 +47,26 @@
       height: 100%;
       width: 100%;
     }
+    .container {
+      width: 400px;
+    }
   </style>
 </head>
 <body>
-  <div style="width: 300px;margin: 0 auto;">
+  <div class="container">
     <form name="contact" method="post" netlify-honeypot="b" autocomplete="off" netlify secure>
-        <p>
-          <label for="name">Basic Field</label>
-          <input type="text" name="name" id="name" placeholder="Name" data-secure-field />
-        </p>
-    
-        <p>
-          <label for="ssn">Secure Field</label>
-          <input type="text" name="field2341555" placeholder="Field" data-secure-field />
-        </p>
+      <div class="form-group">
+        <label for="field">Basic Field</label>
+        <input type="text" class="form-control" name="field" id="field" placeholder="Password">
+      </div>
+
+      <div class="form-group">
+        <label for="secure-field">Secure Fields</label>
+        <input type="text" class="form-control" name="secure-field" id="secure-field" placeholder="Secure Field" data-secure-field>
+      </div>
       
-        <p>
-          <button type="submit" id="submit">Send</button>
-        </p>
-      </form>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </div>
 </body>
 </html>
