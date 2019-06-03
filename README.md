@@ -1,3 +1,5 @@
+Addon docs https://www.verygoodsecurity.com/integrations/netlify
+
 ### Example of using VGS as a netlify addon
 
 First to all you need to create your site and deploy to netlify.
@@ -8,7 +10,6 @@ First to all you need to create your site and deploy to netlify.
 4. Run `netlify addons:create vgs` from site's directory.
 5. Run `netlify addons:auth vgs`, to authenticate and give addon access to your VGS account.
 6. Then, follow interactive guide.
-
 
 Example of form
 ```html
