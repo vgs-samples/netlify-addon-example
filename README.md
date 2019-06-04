@@ -28,8 +28,8 @@ Example of form
   </p>
 </form>
 ```
-- `name` & `netlify` form attributes are required by (Netlify Forms)[https://www.netlify.com/docs/form-handling/]
-- `secure` attribute enables (VGS Collect)[https://www.verygoodsecurity.com/docs/features/vgs-collect] to secure your form.
+- `name` & `netlify` form attributes are required by [Netlify Forms](https://www.netlify.com/docs/form-handling/)
+- `secure` attribute enables [VGS Collect](https://www.verygoodsecurity.com/docs/features/vgs-collect) to secure your form.
 - `data-secure-field` input attribute tells which field should be secured
 
 
