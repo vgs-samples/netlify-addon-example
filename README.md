@@ -20,8 +20,8 @@ Example of form
   </p>
     
   <p>
-    <label for="ssn">Secure Field</label>
-    <input type="text" name="secure" data-secure-field />
+    <label for="secure">Secure Field</label>
+    <input type="text" name="secure" id="secure" data-secure-field />
   </p>
   <p>
     <button type="submit" id="submit">Send</button>
