@@ -1,4 +1,4 @@
-Addon docs https://www.verygoodsecurity.com/integrations/netlify
+Addon docs https://www.verygoodsecurity.com/docs/integrations/netlify
 
 ### Example of using VGS as a netlify addon
 
