@@ -13,7 +13,7 @@ First to all you need to create your site and deploy to netlify.
 
 Example of form
 ```html
-<form name="contact" method="post" netlify-honeypot="b" autocomplete="off" netlify secure>
+<form name="contact" method="post" netlify-honeypot="b" autocomplete="off" data-netlify data-secure>
   <p>
     <label for="name">Basic Field</label>
     <input type="text" name="name" id="name" />
@@ -29,7 +29,7 @@ Example of form
 </form>
 ```
 - `name` & `netlify` form attributes are required by [Netlify Forms](https://www.netlify.com/docs/form-handling/)
-- `secure` attribute enables [VGS Collect](https://www.verygoodsecurity.com/docs/features/vgs-collect) to secure your form.
+- `data-secure` attribute enables [VGS Collect](https://www.verygoodsecurity.com/docs/features/vgs-collect) to secure your form.
 - `data-secure-field` input attribute tells which field should be secured
 
 
