@@ -1,0 +1,42 @@
+data:
+  - attributes:
+      created_at: '2021-08-13T11:25:42'
+      destination_override_endpoint: 'https://koro-netlify-collect.netlify.app'
+      entries:
+        - classifiers: {}
+          config:
+            condition: AND
+            rules:
+              - expression:
+                  field: ContentType
+                  operator: equals
+                  type: string
+                  values:
+                    - application/x-www-form-urlencoded
+          id: 876aa1a8-4a9a-48b1-a941-54186b0c48f6
+          id_selector: null
+          operation: REDACT
+          operations: null
+          phase: REQUEST
+          public_token_generator: UUID
+          targets:
+            - body
+          token_manager: PERSISTENT
+          transformer: FORM_FIELD
+          transformer_config:
+            - secure-field
+          transformer_config_map: null
+          type: null
+      host_endpoint: (.*)\.verygoodproxy\.com
+      id: 161021c4-b377-4b81-8845-bb961141d792
+      ordinal: null
+      port: 80
+      protocol: http
+      source_endpoint: '*'
+      tags:
+        name: echo.apps.verygood.systems-spring-green-crescent
+        source: RouteContainer
+      updated_at: '2021-08-13T20:42:43'
+    id: 161021c4-b377-4b81-8845-bb961141d792
+    type: rule_chain
+version: 1
