@@ -1,3 +1,4 @@
+// get YOUR_VAULT_TENANT in the VGS Dashboard -> Home -> under the page header -> Vault ID
 const vgsForm = window.VGSCollect.create('YOUR_VAULT_TENANT', 'SANDBOX', () => {});
 
 const css = {

@@ -44,7 +44,7 @@ document.getElementById("collect-form").addEventListener("submit", async(e) => {
   e.preventDefault();
   const fields = document.querySelectorAll("input.form-field");
   vgsForm.submit(
-    "/post",
+    "/post", // change in VGS Dashboard -> Routes -> Manage (inbound route) -> Filters -> Conditions
     {
       headers: {
         "Content-Type": "application/json",
