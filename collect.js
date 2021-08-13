@@ -1,5 +1,5 @@
 // get YOUR_VAULT_TENANT in the VGS Dashboard -> Home -> under the page header -> Vault ID
-const vgsForm = window.VGSCollect.create('YOUR_VAULT_TENANT', 'SANDBOX', () => {});
+const vgsForm = window.VGSCollect.create('YOUR_VAULT_ID', 'SANDBOX', () => {});
 
 const css = {
   boxSizing: 'border-box',
@@ -30,7 +30,8 @@ document.getElementById("collect-form").addEventListener("submit", async(e) => {
       serialization: "formData"
     },
     (status, state) => {
-      console.log('state', state)
+      console.log('state', state);
+      window.location.reload();
     },
     function(errors) {
       console.error(errors);

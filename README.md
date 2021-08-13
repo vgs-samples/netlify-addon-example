@@ -33,3 +33,17 @@ Example of form
 - `data-secure-field` input attribute tells which field should be secured
 
 
+### Example of the same setup using Collect.js
+
+1. Go to [VGS Dashboard](https://dashboard.verygoodsecurity.com)
+2. Click Routes in the left Sidebar
+3. Change YOUR_SITE_URL with url of your netlify site (with https://)
+4. Import collect-route.yaml on the VGS Dashboard
+5. Copy your VGS Vault id (looks like `tnt9vwcpbe8`)
+6. Replace YOUR_VAULT_ID in collect.js file with it
+7. Deploy your site and open `/collect` page
+8. Submit the form & observe that `secure-field` is aliased now
+
+## How it works
+1. When you deploy your site make sure to include `name` attribute to your form. Then, 
+2. 
