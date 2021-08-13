@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Inter;
+    font-size: 16px !important;
+}
+  form {
+    width: 300px;
+    margin: 0 auto; 
+  }
+  .form-field {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, .3);
+    padding: 0 10px;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .form-field-group {
+    display: flex;
+    flex-flow: wrap;
+  }
+ 
+  .form-field-group div:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+  .form-field-group div:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+  .form-button {
+    border: 1px solid #1f8ab0;
+    background-color: #3b495c;
+    border-color: #3b495c;
+    color: #ced5e0;
+    font-family: inherit;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 35px;
+    width: 100%;
+  }
+
+button[type="submit"] {
+    background: #145ff5;
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px;
+    color: white;
+}
+
+.multiplexing-demo {
+    max-width: 924px;
+}
+
+.origin-card, .updated-card {
+    padding: 16px 16px 40px;
+}
+
+.flex-container {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  .stretch {
+    -webkit-align-items: stretch;
+    align-items: stretch;
+  }
+  
+  label {
+    font-size: 16px !important;
+  }
+.ant-card {
+    font-size: 16px !important;
+    width: 438px;
+    height: 340px;
+    box-sizing: border-box;
+    border: 1px solid #C8D0DB;
+    font-feature-settings: "tnum";
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.ant-card-head {
+    height: 20%;
+    padding: 0 1rem;
+    background: #F9FAFB;
+    box-sizing: border-box;
+    min-height: 48px;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #C8D0DB;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .ant-card-head-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ant-card-head-title {
+    display: inline-block;
+    flex: 1;
+    padding: 1rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    font-size: 16px;
+    color: #40545F;
+  }
+  
+  .ant-card-extra {
+    float: right;
+    margin-left: auto;
+    padding: 16px 0;
+    color: #000000d9;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+
+#collect-form {
+    align-items: center;
+}
+
+.collect-form-body {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #145FF5;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline;
+}
+
+img {
+    display: inline-block;
+    margin-bottom: 5px ;
+}
+
+span {
+    color: #40545F;
+}
+
+.retreiving {
+  font-family: Inter, Averta;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.unknown-response {
+  color: #000000;
+  font-weight: 600;
+}
+
+.redacted-card {
+  margin-top: 13px;
+  background: #E1E6ED;
+  border: 1px solid #C8D0DB;
+  box-sizing: border-box;
+  border-radius: 8px 8px 0px 0px;
+  padding: 8px;
+}
+
+.redacted-card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #40545F;
+}
+
+.redacted-card-value {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;
+  color: #40545F;
+}
+
+.redacted-date {
+  background: #E1E6ED;
+  border: 1px solid #C8D0DB;
+  border-top: none;
+  box-sizing: border-box;
+  border-radius: 0px 0px 8px 8px;
+  padding: 8px;
+}
+
+.expiration-date-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #40545F;
+}
+
+.form-field-group input {
+  color: #757575;
+  font-size: 13px;
+}
+
+.form-field-group input::placeholder {
+  color: #757575;
+}
+
+.form-field-group input:focus-visible {
+  outline: none;
+}

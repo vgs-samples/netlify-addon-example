@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>VGS Addon for Netlify</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-
+  <link rel="stylesheet" href="/index.css">
   <style>
     body {
       margin-top: 100px; 
@@ -55,19 +55,16 @@
 <body>
   <div class="container">
     <h3 class="mb-5">VGS Addon for Netlify</h3>
-    <form name="contact" method="post" netlify-honeypot="b" autocomplete="off" data-netlify data-secure>
-      <div class="form-group">
-        <label for="field">Basic Field</label>
-        <input type="text" class="form-control" name="field" id="field" placeholder="Password">
+    <form id="collect-form" method="post">
+      <div id="cc-holder" class="form-field"></div>
+      <div id="cc-number" class="form-field"></div>
+      <div class="form-field-group">
+        <input autocomplete="off" name="cvv" type="text" maxlength="7" required  placeholder="MM / YY" id="expiration-date" class="form-field">
       </div>
-
-      <div class="form-group">
-        <label for="secure-field">Secure Fields</label>
-        <input type="text" class="form-control" name="secure-field" id="secure-field" placeholder="Secure Field" data-secure-field>
-      </div>
-      
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="form-button">Submit</button>
     </form>
   </div>
 </body>
+<script type="text/javascript" src="https://js.verygoodvault.com/vgs-collect/2.9.0/vgs-collect.js"></script>
+<script type="module" src="index.js"></script>
 </html>
