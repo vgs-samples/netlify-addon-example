@@ -44,6 +44,7 @@ Example of form
 7. Deploy your site and open `/collect` page
 8. Submit the form & observe that `secure-field` is aliased now
 
-## How it works
+#### How it works
 1. When you deploy your site, make sure to include `name` attribute to your form. Then, add the same name to your collect payload https://github.com/verygoodsecurity/netlify-addon-example/blob/master/collect.js#L27
-2. Also, you need to include hidden input for each field that you want to secure https://github.com/verygoodsecurity/netlify-addon-example/blob/master/collect.html#L50. It will help netlify parser to know which field names will be submitted later.
+2. Then create VGS Collect fields, isntead of hidden inputs https://github.com/verygoodsecurity/netlify-addon-example/blob/master/collect.js#L11
+3. Also, you need to include hidden input for each field that you want to secure https://github.com/verygoodsecurity/netlify-addon-example/blob/master/collect.html#L50. It will help netlify parser to know which field names will be submitted later.
